@@ -435,6 +435,4 @@ class AdminArticleController extends AdminBaseController
     {
 
     }
-
-
 }

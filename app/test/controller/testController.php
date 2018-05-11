@@ -93,4 +93,10 @@ class testController extends AdminBaseController
         $this->assign('data', $datas);
         return $this->fetch();
     }
+
+    public function test2()
+    {
+        $this->assign('data');
+        return $this->fetch();
+    }
 }
