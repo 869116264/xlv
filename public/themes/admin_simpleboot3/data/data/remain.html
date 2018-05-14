@@ -2,29 +2,29 @@
 </head>
 <body>
 <div class="wrap js-check-wrap">
-    <ul class="nav nav-tabs">
-        <li><a href="{:url('data/base')}">base数据</a></li>
-        <li class="active"><a href="javascript:;">remain数据</a></li>
-    </ul>
-    <form class="well form-inline margin-top-20" method="post" action="{:url('data/remain')}">
-        分类:
-        <select class="form-control" name="category" style="width: 140px;">
-            <option value='0'>全部</option>
-            {$category_tree|default=''}
-        </select> &nbsp;&nbsp;
-        时间:
-        <input type="text" class="form-control js-bootstrap-datetime" name="start_time"
-               value="{$start_time|default=''}"
-               style="width: 140px;" autocomplete="off">-
-        <input type="text" class="form-control js-bootstrap-datetime" name="end_time"
-               value="{$end_time|default=''}"
-               style="width: 140px;" autocomplete="off"> &nbsp;
-        关键字:
-        <input type="text" class="form-control" name="keyword" style="width: 200px;"
-               value="{$keyword|default=''}" placeholder="请输入关键字...">
-        <input type="submit" class="btn btn-primary" value="搜索"/>
-        <a class="btn btn-danger" href="{:url('data/remain')}">清空</a>
-    </form>
+    <!--<ul class="nav nav-tabs">-->
+        <!--<li><a href="{:url('data/base')}">base数据</a></li>-->
+        <!--<li class="active"><a href="javascript:;">remain数据</a></li>-->
+    <!--</ul>-->
+    <!--<form class="well form-inline margin-top-20" method="post" action="{:url('data/remain')}">-->
+        <!--分类:-->
+        <!--<select class="form-control" name="category" style="width: 140px;">-->
+            <!--<option value='0'>全部</option>-->
+            <!--{$category_tree|default=''}-->
+        <!--</select> &nbsp;&nbsp;-->
+        <!--时间:-->
+        <!--<input type="text" class="form-control js-bootstrap-datetime" name="start_time"-->
+               <!--value="{$start_time|default=''}"-->
+               <!--style="width: 140px;" autocomplete="off">- -->
+        <!--<input type="text" class="form-control js-bootstrap-datetime" name="end_time"-->
+               <!--value="{$end_time|default=''}"-->
+               <!--style="width: 140px;" autocomplete="off"> &nbsp;-->
+        <!--关键字:-->
+        <!--<input type="text" class="form-control" name="keyword" style="width: 200px;"-->
+               <!--value="{$keyword|default=''}" placeholder="请输入关键字...">-->
+        <!--<input type="submit" class="btn btn-primary" value="搜索"/>-->
+        <!--<a class="btn btn-danger" href="{:url('data/remain')}">清空</a>-->
+    <!--</form>-->
     <form class="js-ajax-form" action="" method="post">
         <table class="table table-hover table-bordered table-list">
             <thead>
@@ -32,11 +32,11 @@
                 <notempty name="category">
                     <th width="50">{:lang('SORT')}</th>
                 </notempty>
-                <th width="50">ID</th>
-                <th width="50">reg_date</th>
-                <th width="50">login_date</th>
-                <th width="50">remain_day</th>
-                <th width="65">num</th>
+                <th width="30">ID</th>
+                <th width="30">注册时间</th>
+                <th width="30">登录日期</th>
+                <th width="70">几日流程（次留、3日留存）</th>
+                <th width="30">留存人数</th>
             </tr>
             </thead>
             <foreach name="data" item="vo">
