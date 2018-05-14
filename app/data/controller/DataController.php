@@ -1,13 +1,14 @@
 <?php
 
-namespace app\test\controller;
+namespace app\data\controller;
 
-use app\test\model\CountBaseDatas;
+use app\data\model\CountBaseDatas;
+use app\data\model\CountRemainDatas;
 use cmf\controller\AdminBaseController;
 use think\Controller;
 use think\Request;
 
-class testController extends AdminBaseController
+class DataController extends AdminBaseController
 {
     /**
      * 显示资源列表
@@ -85,18 +86,26 @@ class testController extends AdminBaseController
         //
     }
 
-    public function test()
+    public function base()
     {
-
+        $param = $this->request->param();
+//        halt($param);
         $model = new CountBaseDatas();
-        $datas = $model->select();
+        $datas = $model->paginate(10);
         $this->assign('data', $datas);
+        $this->assign('page', $datas->render());
         return $this->fetch();
     }
 
-    public function test2()
+    public function remain()
     {
-        $this->assign('data');
+        $param = $this->request->param();
+//        halt($param);
+        $model = new CountRemainDatas();
+        $datas = $model->paginate(10);
+        $this->assign('data', $datas);
+        $this->assign('page', $datas->render());
         return $this->fetch();
     }
 }
+
