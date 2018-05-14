@@ -89,7 +89,6 @@ class DataController extends AdminBaseController
     public function base()
     {
         $param = $this->request->param();
-//        halt($param);
         $model = new CountBaseDatas();
         $datas = $model->paginate(10);
         $this->assign('data', $datas);
@@ -100,7 +99,6 @@ class DataController extends AdminBaseController
     public function remain()
     {
         $param = $this->request->param();
-//        halt($param);
         $model = new CountRemainDatas();
         $datas = $model->paginate(10);
         $this->assign('data', $datas);
