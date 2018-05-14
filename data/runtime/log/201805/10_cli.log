@@ -1,0 +1,3 @@
+[ 2018-05-10T15:48:06+08:00 ][ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ 2018-05-10T15:48:06+08:00 ][ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.007718s ]
