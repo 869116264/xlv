@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{$theme_vars.name|default='ThinkCMF'}的网站</title>
+</head>
+<body>
+Hello {$theme_vars.name|default='ThinkCMF'}!
+
+<widget name="block1">
+    <div style="background:{$widget.vars.background|default='red'};height: 100px;line-height: 100px;margin-bottom: 10px;color:#fff;">
+        {$widget.title|default='分块一'}
+    </div>
+</widget>
+
+<widget name="block2">
+    <div style="background:{$widget.vars.background|default='blue'};border:{$widget.vars.border_width|default=1}px solid {$widget.vars.border_color|default='red'};height: 100px;line-height: 100px;color:#fff;">
+        {$widget.title|default='分块二'}
+    </div>
+</widget>
+</body>
+</html>
