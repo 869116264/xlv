@@ -33,8 +33,8 @@
                     <th width="50">{:lang('SORT')}</th>
                 </notempty>
                 <th width="30">ID</th>
-                <th width="30">注册时间</th>
                 <th width="30">登录日期</th>
+                <th width="30">注册日期</th>
                 <th width="70">几日流程（次留、3日留存）</th>
                 <th width="30">留存人数</th>
             </tr>
@@ -42,8 +42,8 @@
             <foreach name="data" item="vo">
                 <tr>
                     <td><b>{$vo.id}</b></td>
-                    <td><b>{$vo.reg_date}</b></td>
                     <td><b>{$vo.login_date}</b></td>
+                    <td><b>{$vo.reg_date}</b></td>
                     <td><b>{$vo.remain_day}</b></td>
                     <td><b>{$vo.num}</b></td>
                 </tr>

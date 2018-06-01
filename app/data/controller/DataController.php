@@ -100,7 +100,7 @@ class DataController extends AdminBaseController
     {
         $param = $this->request->param();
         $model = new CountRemainDatas();
-        $datas = $model->order('reg_date desc,login_date desc')->paginate(10);
+        $datas = $model->order('login_date desc,reg_date desc')->paginate(10);
         $this->assign('data', $datas);
         $this->assign('page', $datas->render());
         return $this->fetch();
