@@ -13,13 +13,13 @@ class CountBaseDatas extends Model
         // 数据库类型
         'type' => 'mysql',
         // 服务器地址
-        'hostname' => 'mysql56.rdsmxlha750mykc.rds.bj.baidubce.com',
+        'hostname' => 'mysql56.rdsm0qalgn5tvgb.rds.bj.baidubce.com',
         // 数据库名
         'database' => 'xlcount',
         // 数据库用户名
         'username' => 'rdsroot',
         // 数据库密码
-        'password' => 'SYLKLy1n',
+        'password' => 'YsmbchhN',
         // 数据库连接端口
         'hostport' => '3306',
         // 数据库连接参数

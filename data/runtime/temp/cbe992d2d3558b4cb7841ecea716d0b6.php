@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:47:"themes/admin_simpleboot3/admin/index/index.html";i:1528265511;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:47:"themes/admin_simpleboot3/admin/index/index.html";i:1528277532;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh_CN" style="overflow: hidden;">
 <head>

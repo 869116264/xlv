@@ -1,29 +1,36 @@
 <include file="public@header"/>
+<style type="text/css">
+    .table > thead > tr > th {
+        vertical-align: bottom;
+        border-bottom: 2px solid #ecf0f1;
+        white-space: nowrap;
+    }
+</style>
 </head>
 <body>
 <div class="wrap js-check-wrap">
     <!--<ul class="nav nav-tabs">-->
-        <!--<li><a href="{:url('data/base')}">base数据</a></li>-->
-        <!--<li class="active"><a href="javascript:;">remain数据</a></li>-->
+    <!--<li><a href="{:url('data/base')}">base数据</a></li>-->
+    <!--<li class="active"><a href="javascript:;">remain数据</a></li>-->
     <!--</ul>-->
     <!--<form class="well form-inline margin-top-20" method="post" action="{:url('data/remain')}">-->
-        <!--分类:-->
-        <!--<select class="form-control" name="category" style="width: 140px;">-->
-            <!--<option value='0'>全部</option>-->
-            <!--{$category_tree|default=''}-->
-        <!--</select> &nbsp;&nbsp;-->
-        <!--时间:-->
-        <!--<input type="text" class="form-control js-bootstrap-datetime" name="start_time"-->
-               <!--value="{$start_time|default=''}"-->
-               <!--style="width: 140px;" autocomplete="off">- -->
-        <!--<input type="text" class="form-control js-bootstrap-datetime" name="end_time"-->
-               <!--value="{$end_time|default=''}"-->
-               <!--style="width: 140px;" autocomplete="off"> &nbsp;-->
-        <!--关键字:-->
-        <!--<input type="text" class="form-control" name="keyword" style="width: 200px;"-->
-               <!--value="{$keyword|default=''}" placeholder="请输入关键字...">-->
-        <!--<input type="submit" class="btn btn-primary" value="搜索"/>-->
-        <!--<a class="btn btn-danger" href="{:url('data/remain')}">清空</a>-->
+    <!--分类:-->
+    <!--<select class="form-control" name="category" style="width: 140px;">-->
+    <!--<option value='0'>全部</option>-->
+    <!--{$category_tree|default=''}-->
+    <!--</select> &nbsp;&nbsp;-->
+    <!--时间:-->
+    <!--<input type="text" class="form-control js-bootstrap-datetime" name="start_time"-->
+    <!--value="{$start_time|default=''}"-->
+    <!--style="width: 140px;" autocomplete="off">- -->
+    <!--<input type="text" class="form-control js-bootstrap-datetime" name="end_time"-->
+    <!--value="{$end_time|default=''}"-->
+    <!--style="width: 140px;" autocomplete="off"> &nbsp;-->
+    <!--关键字:-->
+    <!--<input type="text" class="form-control" name="keyword" style="width: 200px;"-->
+    <!--value="{$keyword|default=''}" placeholder="请输入关键字...">-->
+    <!--<input type="submit" class="btn btn-primary" value="搜索"/>-->
+    <!--<a class="btn btn-danger" href="{:url('data/remain')}">清空</a>-->
     <!--</form>-->
     <form class="js-ajax-form" action="" method="post">
         <table class="table table-hover table-bordered table-list">
@@ -32,20 +39,130 @@
                 <notempty name="category">
                     <th width="50">{:lang('SORT')}</th>
                 </notempty>
-                <th width="30">ID</th>
-                <th width="30">登录日期</th>
-                <th width="30">注册日期</th>
-                <th width="70">几日流程（次留、3日留存）</th>
-                <th width="30">留存人数</th>
+                <th width="50">注册日期</th>
+                <th width="50">总人数</th>
+                <th width="50">次留数</th>
+                <th width="50">次留率</th>
+                <th width="50">3留数</th>
+                <th width="50">3留率</th>
+                <th width="50">4留数</th>
+                <th width="50">4留率</th>
+                <th width="50">5留数</th>
+                <th width="50">5留率</th>
+                <th width="50">6留数</th>
+                <th width="50">6留率</th>
+                <th width="50">7留数</th>
+                <th width="50">7留率</th>
+                <th width="50">8留数</th>
+                <th width="50">8留率</th>
+                <th width="50">9留数</th>
+                <th width="50">9留率</th>
+                <th width="50">10留数</th>
+                <th width="50">10留率</th>
+                <th width="50">11留数</th>
+                <th width="50">11留率</th>
+                <th width="50">12留数</th>
+                <th width="50">12留率</th>
+                <th width="50">13留数</th>
+                <th width="50">13留率</th>
+                <th width="50">14留数</th>
+                <th width="50">14留率</th>
+                <th width="50">15留数</th>
+                <th width="50">15留率</th>
+                <th width="50">16留数</th>
+                <th width="50">16留率</th>
+                <th width="50">17留数</th>
+                <th width="50">17留率</th>
+                <th width="50">18留数</th>
+                <th width="50">18留率</th>
+                <th width="50">19留数</th>
+                <th width="50">19留率</th>
+                <th width="50">20留数</th>
+                <th width="50">20留率</th>
+                <th width="50">21留数</th>
+                <th width="50">21留率</th>
+                <th width="50">22留数</th>
+                <th width="50">22留率</th>
+                <th width="50">23留数</th>
+                <th width="50">23留率</th>
+                <th width="50">24留数</th>
+                <th width="50">24留率</th>
+                <th width="50">25留数</th>
+                <th width="50">25留率</th>
+                <th width="50">26留数</th>
+                <th width="50">26留率</th>
+                <th width="50">27留数</th>
+                <th width="50">27留率</th>
+                <th width="50">28留数</th>
+                <th width="50">28留率</th>
+                <th width="50">29留数</th>
+                <th width="50">29留率</th>
+                <th width="50">30留数</th>
+                <th width="50">30留率</th>
             </tr>
             </thead>
-            <foreach name="data" item="vo">
+            <foreach name="data" item="vo" key="key">
                 <tr>
-                    <td><b>{$vo.id}</b></td>
-                    <td><b>{$vo.login_date}</b></td>
-                    <td><b>{$vo.reg_date}</b></td>
-                    <td><b>{$vo.remain_day}</b></td>
-                    <td><b>{$vo.num}</b></td>
+                    <td><b>{$key}</b></td>
+                    <td><b>{$vo.all}</b></td>
+                    <td><b>{$vo.2}</b></td>
+                    <td><b>{$vo.2p}%</b></td>
+                    <td><b>{$vo.3}</b></td>
+                    <td><b>{$vo.3p}%</b></td>
+                    <td><b>{$vo.4}</b></td>
+                    <td><b>{$vo.4p}%</b></td>
+                    <td><b>{$vo.5}</b></td>
+                    <td><b>{$vo.5p}%</b></td>
+                    <td><b>{$vo.6}</b></td>
+                    <td><b>{$vo.6p}%</b></td>
+                    <td><b>{$vo.7}</b></td>
+                    <td><b>{$vo.7p}%</b></td>
+                    <td><b>{$vo.8}</b></td>
+                    <td><b>{$vo.8p}%</b></td>
+                    <td><b>{$vo.9}</b></td>
+                    <td><b>{$vo.9p}%</b></td>
+                    <td><b>{$vo.10}</b></td>
+                    <td><b>{$vo.10p}%</b></td>
+                    <td><b>{$vo.11}</b></td>
+                    <td><b>{$vo.11p}%</b></td>
+                    <td><b>{$vo.12}</b></td>
+                    <td><b>{$vo.12p}%</b></td>
+                    <td><b>{$vo.13}</b></td>
+                    <td><b>{$vo.13p}%</b></td>
+                    <td><b>{$vo.14}</b></td>
+                    <td><b>{$vo.14p}%</b></td>
+                    <td><b>{$vo.15}</b></td>
+                    <td><b>{$vo.15p}%</b></td>
+                    <td><b>{$vo.16}</b></td>
+                    <td><b>{$vo.16p}%</b></td>
+                    <td><b>{$vo.17}</b></td>
+                    <td><b>{$vo.17p}%</b></td>
+                    <td><b>{$vo.18}</b></td>
+                    <td><b>{$vo.18p}%</b></td>
+                    <td><b>{$vo.19}</b></td>
+                    <td><b>{$vo.19p}%</b></td>
+                    <td><b>{$vo.20}</b></td>
+                    <td><b>{$vo.20p}%</b></td>
+                    <td><b>{$vo.21}</b></td>
+                    <td><b>{$vo.21p}%</b></td>
+                    <td><b>{$vo.22}</b></td>
+                    <td><b>{$vo.22p}%</b></td>
+                    <td><b>{$vo.23}</b></td>
+                    <td><b>{$vo.23p}%</b></td>
+                    <td><b>{$vo.24}</b></td>
+                    <td><b>{$vo.24p}%</b></td>
+                    <td><b>{$vo.25}</b></td>
+                    <td><b>{$vo.25p}%</b></td>
+                    <td><b>{$vo.26}</b></td>
+                    <td><b>{$vo.26p}%</b></td>
+                    <td><b>{$vo.27}</b></td>
+                    <td><b>{$vo.27p}%</b></td>
+                    <td><b>{$vo.28}</b></td>
+                    <td><b>{$vo.28p}%</b></td>
+                    <td><b>{$vo.29}</b></td>
+                    <td><b>{$vo.29p}%</b></td>
+                    <td><b>{$vo.30}</b></td>
+                    <td><b>{$vo.30p}%</b></td>
                 </tr>
             </foreach>
         </table>
