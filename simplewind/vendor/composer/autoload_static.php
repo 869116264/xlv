@@ -30,6 +30,11 @@ class ComposerStaticInit929fb365b9981d29459d58f676689cf7
         array (
             'Qiniu\\' => 6,
         ),
+        'P' => 
+        array (
+            'Psr\\SimpleCache\\' => 16,
+            'PhpOffice\\PhpSpreadsheet\\' => 25,
+        ),
         'F' => 
         array (
             'FontLib\\' => 8,
@@ -66,6 +71,14 @@ class ComposerStaticInit929fb365b9981d29459d58f676689cf7
         'Qiniu\\' => 
         array (
             0 => __DIR__ . '/..' . '/qiniu/php-sdk/src/Qiniu',
+        ),
+        'Psr\\SimpleCache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/simple-cache/src',
+        ),
+        'PhpOffice\\PhpSpreadsheet\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpoffice/phpspreadsheet/src/PhpSpreadsheet',
         ),
         'FontLib\\' => 
         array (

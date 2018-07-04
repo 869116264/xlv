@@ -6,6 +6,7 @@ use app\data\model\CountBaseDatas;
 use app\data\model\CountRemainDatas;
 use cmf\controller\AdminBaseController;
 use think\Controller;
+use think\Db;
 use think\Request;
 
 class DataController extends AdminBaseController
@@ -208,6 +209,201 @@ class DataController extends AdminBaseController
             '<= date_sub(now(),interval 1  day)')->paginate($pageNum);
         $this->assign('data', $finalDatas);
         $this->assign('page', $baseData->render());
+        return $this->fetch();
+    }
+
+    public function bean()
+    {
+
+        //因为sql 之前已经写好了 所以这里就不用 Model 了 业务需求也比较简单 查数据展示即可 下面代码比较丑 不好意思
+        $result = Db::connect([
+            // 数据库类型
+            'type' => 'mysql',
+            // 服务器地址
+            'hostname' => 'mysql56.rdsm0qalgn5tvgb.rds.bj.baidubce.com',
+            // 数据库名
+            'database' => 'xlgame',
+            // 数据库用户名
+            'username' => 'rdsroot',
+            // 数据库密码
+            'password' => 'YsmbchhN',
+            // 数据库连接端口
+            'hostport' => '3306',
+            // 数据库连接参数
+            'params' => [],
+            // 数据库编码默认采用utf8
+            'charset' => 'utf8',
+            // 数据库表前缀
+            'prefix' => '',
+            // 数据库调试模式
+            'debug' => false,
+        ])->query('SELECT
+  t1.date      ,
+  remain_money ,
+  increase_num ,
+  decrease_num 
+FROM (SELECT
+        sum(remain_money) AS               remain_money,
+        date_format(create_at, (\'%Y%m%d\')) date
+      FROM account_log
+      GROUP BY date) AS t1 INNER JOIN (SELECT
+                                         increase_num,
+                                         decrease_num,
+                                         (increase_num - decrease_num) AS handle_num,
+                                         date1                         AS date
+                                       FROM (SELECT
+                                               sum(handle_money) AS               increase_num,
+                                               date_format(create_at, (\'%Y%m%d\')) date1
+                                             FROM account_log
+                                             WHERE action = 1
+                                             GROUP BY date1) AS increase INNER JOIN (SELECT
+                                                                                       sum(
+                                                                                           handle_money) AS    decrease_num,
+                                                                                       date_format(create_at,
+                                                                                                   (\'%Y%m%d\')) date2
+                                                                                     FROM account_log
+                                                                                     WHERE action = 2
+                                                                                     GROUP BY date2) AS decrease
+                                           ON increase.date1 = decrease.date2) AS t2 ON t1.date = t2.date');
+        $this->assign('data', $result);
+        return $this->fetch();
+    }
+
+    public function travel()
+    {
+
+        $result = Db::connect([
+            // 数据库类型
+            'type' => 'mysql',
+            // 服务器地址
+            'hostname' => 'mysql56.rdsm0qalgn5tvgb.rds.bj.baidubce.com',
+            // 数据库名
+            'database' => 'xlgame',
+            // 数据库用户名
+            'username' => 'rdsroot',
+            // 数据库密码
+            'password' => 'YsmbchhN',
+            // 数据库连接端口
+            'hostport' => '3306',
+            // 数据库连接参数
+            'params' => [],
+            // 数据库编码默认采用utf8
+            'charset' => 'utf8',
+            // 数据库表前缀
+            'prefix' => '',
+            // 数据库调试模式
+            'debug' => false,
+        ])->query('SELECT
+    count(1) travel_num,
+    count(DISTINCT user_id) travel_user_num,
+    date_format(create_at, (\'%Y%m%d\')) date
+    FROM xlgame.travel
+    WHERE status = \'finish\'
+    GROUP BY DATE ');
+        $this->assign('data', $result);
+        return $this->fetch();
+    }
+
+    public function mission()
+    {
+        $result = Db::connect([
+            // 数据库类型
+            'type' => 'mysql',
+            // 服务器地址
+            'hostname' => 'mysql56.rdsm0qalgn5tvgb.rds.bj.baidubce.com',
+            // 数据库名
+            'database' => 'xlgame',
+            // 数据库用户名
+            'username' => 'rdsroot',
+            // 数据库密码
+            'password' => 'YsmbchhN',
+            // 数据库连接端口
+            'hostport' => '3306',
+            // 数据库连接参数
+            'params' => [],
+            // 数据库编码默认采用utf8
+            'charset' => 'utf8',
+            // 数据库表前缀
+            'prefix' => '',
+            // 数据库调试模式
+            'debug' => false,
+        ])->query('SELECT
+  count(1)                           num,
+  config_id,
+  date_format(create_at, (\'%Y%m%d\')) date
+FROM mission
+WHERE completed = \'yes\'
+GROUP BY date DESC, config_id');
+        $this->assign('data', $result);
+        return $this->fetch();
+    }
+
+    public function guidance()
+    {
+        $result = Db::connect([
+            // 数据库类型
+            'type' => 'mysql',
+            // 服务器地址
+            'hostname' => 'mysql56.rdsm0qalgn5tvgb.rds.bj.baidubce.com',
+            // 数据库名
+            'database' => 'xlgame',
+            // 数据库用户名
+            'username' => 'rdsroot',
+            // 数据库密码
+            'password' => 'YsmbchhN',
+            // 数据库连接端口
+            'hostport' => '3306',
+            // 数据库连接参数
+            'params' => [],
+            // 数据库编码默认采用utf8
+            'charset' => 'utf8',
+            // 数据库表前缀
+            'prefix' => '',
+            // 数据库调试模式
+            'debug' => false,
+        ])->query('SELECT
+  count(t1.num) num,
+  t1.num        state
+FROM (SELECT count(*) num
+      FROM xlcount.behavior_log
+      WHERE action = 10
+      GROUP BY game_userid) t1
+GROUP BY t1.num;');
+        $this->assign('data', $result);
+        return $this->fetch();
+    }
+
+    public function consumable()
+    {
+        $result = Db::connect([
+            // 数据库类型
+            'type' => 'mysql',
+            // 服务器地址
+            'hostname' => 'mysql56.rdsm0qalgn5tvgb.rds.bj.baidubce.com',
+            // 数据库名
+            'database' => 'xlcount',
+            // 数据库用户名
+            'username' => 'rdsroot',
+            // 数据库密码
+            'password' => 'YsmbchhN',
+            // 数据库连接端口
+            'hostport' => '3306',
+            // 数据库连接参数
+            'params' => [],
+            // 数据库编码默认采用utf8
+            'charset' => 'utf8',
+            // 数据库表前缀
+            'prefix' => '',
+            // 数据库调试模式
+            'debug' => false,
+        ])->query('SELECT
+  count(1)                           num,
+  propid                             config_id,
+  date_format(logtime, (\'%Y%m%d\')) date
+FROM xlcount.behavior_log
+WHERE action = 15
+GROUP BY date, config_id;');
+        $this->assign('data', $result);
         return $this->fetch();
     }
 }
