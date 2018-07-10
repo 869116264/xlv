@@ -1,0 +1,2753 @@
+---------------------------------------------------------------
+[ 2018-05-30T14:32:41+08:00 ] 0.0.0.0 GET /thinkcmf/public/admin
+[ info ] localhost/thinkcmf/public/admin [运行时间：0.815789s][吞吐率：1.23req/s] [内存消耗：3,434.95kb] [文件加载：77]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.009319s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=1524208082; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1526278462',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.006956s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.002613s ]
+[ info ] [ RUN ] app\admin\controller\IndexController->index[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/admin/controller/IndexController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin/index/index.html [ array (
+  0 => 'admin',
+  1 => 'menus',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.105730s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.092577s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.066509s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.060777s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.062422s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.078791s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.060770s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.065232s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:32:42+08:00 ] 0.0.0.0 GET /thinkcmf/public/admin/main/index.html
+[ info ] localhost/thinkcmf/public/admin/main/index.html [运行时间：0.832757s][吞吐率：1.20req/s] [内存消耗：3,171.88kb] [文件加载：75]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.005751s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/admin',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=1524208082; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1526278462',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002036s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001480s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\MainController->index[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/admin/controller/MainController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin/main/index.html [ array (
+  0 => 'admin',
+  1 => 'dashboard_widgets',
+  2 => 'dashboard_widget_plugins',
+  3 => 'has_smtp_setting',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.109548s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.064877s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.067464s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.069088s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.075465s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_dashboard_widgets' LIMIT 1 [ RunTime:0.098557s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'smtp_setting' LIMIT 1 [ RunTime:0.089386s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.076253s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:32:43+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/base.html
+[ info ] localhost/thinkcmf/public/data/data/base.html [运行时间：0.852453s][吞吐率：1.17req/s] [内存消耗：3,529.93kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001785s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'base',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/admin',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527661962',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000709s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.000883s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->base[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/base.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.103323s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.061752s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.065525s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.067292s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.092534s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.072220s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:32:50+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/remain.html
+[ info ] localhost/thinkcmf/public/data/data/remain.html [运行时间：5.159008s][吞吐率：0.19req/s] [内存消耗：3,521.63kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.006182s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'remain',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/admin',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527661962',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001280s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.002383s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->remain[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/remain.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:2.046822s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:2.464850s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.063544s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.061354s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.063703s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.063252s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:32:56+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/remain.html?page=2
+[ info ] localhost/thinkcmf/public/data/data/remain.html?page=2 [运行时间：1.769061s][吞吐率：0.57req/s] [内存消耗：3,522.04kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002048s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'remain',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/data/data/remain.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527661962',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000699s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001066s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->remain[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/remain.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.155234s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.334696s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.078341s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.073622s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.305226s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.474536s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:33:00+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/remain.html?page=3
+[ info ] localhost/thinkcmf/public/data/data/remain.html?page=3 [运行时间：4.057295s][吞吐率：0.25req/s] [内存消耗：3,522.04kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002651s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'remain',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/data/data/remain.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527661962',
+)
+[ info ] [ PARAM ] array (
+  'page' => '3',
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001208s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001372s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->remain[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/remain.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:3.275477s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.069598s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.063729s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.064551s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.085315s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.098328s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:33:01+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/remain.html?page=2
+[ info ] localhost/thinkcmf/public/data/data/remain.html?page=2 [运行时间：0.851934s][吞吐率：1.17req/s] [内存消耗：3,522.04kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003466s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'remain',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/data/data/remain.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527661962',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001687s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001491s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->remain[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/remain.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095492s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.069244s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.060496s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.063448s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.062336s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.077782s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:33:02+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/remain.html?page=3
+[ info ] localhost/thinkcmf/public/data/data/remain.html?page=3 [运行时间：0.861150s][吞吐率：1.16req/s] [内存消耗：3,522.04kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003189s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'remain',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/data/data/remain.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527661962',
+)
+[ info ] [ PARAM ] array (
+  'page' => '3',
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000646s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.002239s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->remain[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/remain.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095659s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.063734s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.064616s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.062866s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.074227s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.060047s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:33:03+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/remain.html?page=4
+[ info ] localhost/thinkcmf/public/data/data/remain.html?page=4 [运行时间：0.898154s][吞吐率：1.11req/s] [内存消耗：3,522.04kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002347s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'remain',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/data/data/remain.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527661962',
+)
+[ info ] [ PARAM ] array (
+  'page' => '4',
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000608s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.000899s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->remain[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/remain.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.132165s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.075175s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.082889s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.073790s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.063735s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.104067s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:33:03+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/remain.html?page=5
+[ info ] localhost/thinkcmf/public/data/data/remain.html?page=5 [运行时间：0.833432s][吞吐率：1.20req/s] [内存消耗：3,522.04kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003144s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'remain',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/data/data/remain.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527661962',
+)
+[ info ] [ PARAM ] array (
+  'page' => '5',
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000710s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.000886s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->remain[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/remain.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.104662s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.073638s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.068866s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.087403s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.062574s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.062514s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:33:04+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/remain.html?page=6
+[ info ] localhost/thinkcmf/public/data/data/remain.html?page=6 [运行时间：0.801428s][吞吐率：1.25req/s] [内存消耗：3,522.04kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001436s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'remain',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/data/data/remain.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527661962',
+)
+[ info ] [ PARAM ] array (
+  'page' => '6',
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000639s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.000920s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->remain[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/remain.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.096459s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.073423s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.068578s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.064293s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.065911s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.058988s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:33:05+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/remain.html?page=60
+[ info ] localhost/thinkcmf/public/data/data/remain.html?page=60 [运行时间：0.992643s][吞吐率：1.01req/s] [内存消耗：3,522.05kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002356s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'remain',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/data/data/remain.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527661962',
+)
+[ info ] [ PARAM ] array (
+  'page' => '60',
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000648s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001002s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->remain[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/remain.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.113503s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.075073s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.078777s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.080053s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.072342s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.071377s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:33:10+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/remain.html?page=61
+[ info ] localhost/thinkcmf/public/data/data/remain.html?page=61 [运行时间：4.418211s][吞吐率：0.23req/s] [内存消耗：3,501.27kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001725s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'remain',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/data/data/remain.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527661962',
+)
+[ info ] [ PARAM ] array (
+  'page' => '61',
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000578s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.000878s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->remain[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/remain.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.092428s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.061429s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.063134s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.489158s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:1.626799s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.063853s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:33:10+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/remain.html?page=61
+[ info ] localhost/thinkcmf/public/data/data/remain.html?page=61 [运行时间：0.739516s][吞吐率：1.35req/s] [内存消耗：3,501.27kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001380s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'remain',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/data/data/remain.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527661962',
+)
+[ info ] [ PARAM ] array (
+  'page' => '61',
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000534s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.000891s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->remain[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/remain.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.093736s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.062282s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.064300s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.063289s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.061176s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.063424s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:33:11+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/remain.html?page=61
+[ info ] localhost/thinkcmf/public/data/data/remain.html?page=61 [运行时间：0.839879s][吞吐率：1.19req/s] [内存消耗：3,501.27kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001398s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'remain',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/data/data/remain.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527661962',
+)
+[ info ] [ PARAM ] array (
+  'page' => '61',
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000543s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.000875s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->remain[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/remain.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.102004s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.070970s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.069562s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.090421s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.071996s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.067171s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:33:12+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/remain.html?page=5
+[ info ] localhost/thinkcmf/public/data/data/remain.html?page=5 [运行时间：0.777220s][吞吐率：1.29req/s] [内存消耗：3,522.04kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001462s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'remain',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/data/data/remain.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527661962',
+)
+[ info ] [ PARAM ] array (
+  'page' => '5',
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000799s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.000861s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->remain[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/remain.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.103229s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.068733s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.063978s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.058039s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.080768s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.059103s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:33:13+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/remain.html?page=5
+[ info ] localhost/thinkcmf/public/data/data/remain.html?page=5 [运行时间：0.899427s][吞吐率：1.11req/s] [内存消耗：3,522.04kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002566s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'remain',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/data/data/remain.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527661962',
+)
+[ info ] [ PARAM ] array (
+  'page' => '5',
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.003438s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001637s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->remain[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/remain.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099685s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.073339s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.064343s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.070736s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.076870s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.063645s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:33:14+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/remain.html?page=5
+[ info ] localhost/thinkcmf/public/data/data/remain.html?page=5 [运行时间：0.842962s][吞吐率：1.19req/s] [内存消耗：3,522.04kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002045s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'remain',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/data/data/remain.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527661962',
+)
+[ info ] [ PARAM ] array (
+  'page' => '5',
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000867s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001271s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->remain[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/remain.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.111893s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.068901s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.068051s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.069494s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.077282s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.065231s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:33:15+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/remain.html?page=5
+[ info ] localhost/thinkcmf/public/data/data/remain.html?page=5 [运行时间：0.772773s][吞吐率：1.29req/s] [内存消耗：3,522.04kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001531s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'remain',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/data/data/remain.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527661962',
+)
+[ info ] [ PARAM ] array (
+  'page' => '5',
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000609s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001130s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->remain[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/remain.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.093817s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.069783s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.079483s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.063344s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.066542s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.074145s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:33:15+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/base.html
+[ info ] localhost/thinkcmf/public/data/data/base.html [运行时间：0.838453s][吞吐率：1.19req/s] [内存消耗：3,529.93kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002455s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'base',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/admin',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527661962',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001204s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001417s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->base[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/base.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.103610s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.062989s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.066751s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.062341s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.063008s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.082529s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:33:20+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/base.html?page=2
+[ info ] localhost/thinkcmf/public/data/data/base.html?page=2 [运行时间：4.418555s][吞吐率：0.23req/s] [内存消耗：3,530.34kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002863s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'base',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/data/data/base.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527661962',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000964s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.000973s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->base[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/base.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.103520s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.068410s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.521060s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:1.032775s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:1.326865s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.071550s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:33:21+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/base.html?page=3
+[ info ] localhost/thinkcmf/public/data/data/base.html?page=3 [运行时间：0.818399s][吞吐率：1.22req/s] [内存消耗：3,530.34kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001431s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'base',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/data/data/base.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527661962',
+)
+[ info ] [ PARAM ] array (
+  'page' => '3',
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000567s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001029s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->base[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/base.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.093065s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.066359s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.059601s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.072683s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.093784s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.060322s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:33:21+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/base.html?page=3
+[ info ] localhost/thinkcmf/public/data/data/base.html?page=3 [运行时间：0.767860s][吞吐率：1.30req/s] [内存消耗：3,530.34kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002304s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'base',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/data/data/base.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527661962',
+)
+[ info ] [ PARAM ] array (
+  'page' => '3',
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000744s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.000859s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->base[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/base.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.091810s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.060141s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.072311s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.061134s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.064734s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.061119s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:33:22+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/base.html?page=3
+[ info ] localhost/thinkcmf/public/data/data/base.html?page=3 [运行时间：0.763775s][吞吐率：1.31req/s] [内存消耗：3,530.34kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001586s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'base',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/data/data/base.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527661962',
+)
+[ info ] [ PARAM ] array (
+  'page' => '3',
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000554s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.000942s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->base[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/base.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.093178s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.060200s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.061734s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.065239s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.068683s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.068600s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:33:23+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/base.html?page=3
+[ info ] localhost/thinkcmf/public/data/data/base.html?page=3 [运行时间：0.851742s][吞吐率：1.17req/s] [内存消耗：3,530.34kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001927s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'base',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/data/data/base.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527661962',
+)
+[ info ] [ PARAM ] array (
+  'page' => '3',
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000794s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001052s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->base[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/base.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.105090s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.073317s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.070133s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.100694s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.075402s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.075509s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:33:33+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/base.html?page=6
+[ info ] localhost/thinkcmf/public/data/data/base.html?page=6 [运行时间：0.735973s][吞吐率：1.36req/s] [内存消耗：3,534.35kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001351s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'base',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/data/data/base.html?page=3',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527661962',
+)
+[ info ] [ PARAM ] array (
+  'page' => '6',
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000560s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001047s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->base[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/base.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.094268s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.061516s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.063682s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.065528s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.066138s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.066384s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:34:21+08:00 ] 0.0.0.0 GET /thinkcmf/public/admin
+[ info ] localhost/thinkcmf/public/admin [运行时间：4.441618s][吞吐率：0.23req/s] [内存消耗：3,435.59kb] [文件加载：77]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002503s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527661962',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001070s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001939s ]
+[ info ] [ RUN ] app\admin\controller\IndexController->index[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/admin/controller/IndexController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin/index/index.html [ array (
+  0 => 'admin',
+  1 => 'menus',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.104827s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.068238s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:1.019250s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:2.890898s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.068257s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.079132s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.082536s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.063877s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:34:21+08:00 ] 0.0.0.0 GET /thinkcmf/public/admin/main/index.html
+[ info ] localhost/thinkcmf/public/admin/main/index.html [运行时间：0.632755s][吞吐率：1.58req/s] [内存消耗：3,171.88kb] [文件加载：75]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001771s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/admin',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527661962',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000975s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.000876s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\MainController->index[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/admin/controller/MainController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin/main/index.html [ array (
+  0 => 'admin',
+  1 => 'dashboard_widgets',
+  2 => 'dashboard_widget_plugins',
+  3 => 'has_smtp_setting',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.105110s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.069591s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.069712s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.069574s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.070049s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_dashboard_widgets' LIMIT 1 [ RunTime:0.068083s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'smtp_setting' LIMIT 1 [ RunTime:0.067104s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.069997s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:34:23+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/base.html
+[ info ] localhost/thinkcmf/public/data/data/base.html [运行时间：0.682343s][吞吐率：1.47req/s] [内存消耗：3,277.20kb] [文件加载：78]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001540s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'base',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/admin',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662061; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662061',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000627s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.000863s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->base[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.093578s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.061901s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.059620s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.061539s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.059798s ]
+[ error ] [0]致命错误: Call to a member function render() on null[/Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php:96]
+---------------------------------------------------------------
+[ 2018-05-30T14:34:36+08:00 ] 0.0.0.0 GET /thinkcmf/public/admin
+[ info ] localhost/thinkcmf/public/admin [运行时间：0.600288s][吞吐率：1.67req/s] [内存消耗：3,435.59kb] [文件加载：77]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001629s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662061; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662061',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000609s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001342s ]
+[ info ] [ RUN ] app\admin\controller\IndexController->index[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/admin/controller/IndexController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin/index/index.html [ array (
+  0 => 'admin',
+  1 => 'menus',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.093462s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.064920s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.061385s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.078897s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.065383s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.070789s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.061511s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.061920s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:34:38+08:00 ] 0.0.0.0 GET /thinkcmf/public/admin/main/index.html
+[ info ] localhost/thinkcmf/public/admin/main/index.html [运行时间：1.985375s][吞吐率：0.50req/s] [内存消耗：3,171.88kb] [文件加载：75]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001554s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/admin',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662061; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662061',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000658s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001054s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\MainController->index[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/admin/controller/MainController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin/main/index.html [ array (
+  0 => 'admin',
+  1 => 'dashboard_widgets',
+  2 => 'dashboard_widget_plugins',
+  3 => 'has_smtp_setting',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.088906s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.062561s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.059863s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.063235s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.093671s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_dashboard_widgets' LIMIT 1 [ RunTime:0.061082s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'smtp_setting' LIMIT 1 [ RunTime:0.474277s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:1.038832s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:34:41+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/base.html
+[ info ] localhost/thinkcmf/public/data/data/base.html [运行时间：3.114357s][吞吐率：0.32req/s] [内存消耗：3,529.93kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001833s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'base',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/admin',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662061; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662077',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000699s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001032s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->base[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/base.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:2.382073s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.070843s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.073427s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.074938s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.076211s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.089733s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:38:53+08:00 ] 0.0.0.0 GET /thinkcmf/public/admin
+[ info ] localhost/thinkcmf/public/admin [运行时间：2.529184s][吞吐率：0.40req/s] [内存消耗：3,435.59kb] [文件加载：77]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.003745s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662061; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662077',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001530s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.002193s ]
+[ info ] [ RUN ] app\admin\controller\IndexController->index[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/admin/controller/IndexController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin/index/index.html [ array (
+  0 => 'admin',
+  1 => 'menus',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.967561s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.066489s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.084487s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.068649s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.068592s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.069708s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.066519s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.064757s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:38:54+08:00 ] 0.0.0.0 GET /thinkcmf/public/admin/main/index.html
+[ info ] localhost/thinkcmf/public/admin/main/index.html [运行时间：0.674954s][吞吐率：1.48req/s] [内存消耗：3,171.88kb] [文件加载：75]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001584s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/admin',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662061; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662077',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000644s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.000968s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\MainController->index[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/admin/controller/MainController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin/main/index.html [ array (
+  0 => 'admin',
+  1 => 'dashboard_widgets',
+  2 => 'dashboard_widget_plugins',
+  3 => 'has_smtp_setting',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.112133s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.067835s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.065944s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.069362s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.079288s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_dashboard_widgets' LIMIT 1 [ RunTime:0.097388s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'smtp_setting' LIMIT 1 [ RunTime:0.069864s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.070082s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:38:57+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/remain.html
+[ info ] localhost/thinkcmf/public/data/data/remain.html [运行时间：0.753881s][吞吐率：1.33req/s] [内存消耗：3,521.90kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002022s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'remain',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/admin',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662061; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662334',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000828s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.000887s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->remain[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/remain.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.093783s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.061676s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.069586s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.061784s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.066105s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.062175s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:38:59+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/base.html
+[ info ] localhost/thinkcmf/public/data/data/base.html [运行时间：0.917230s][吞吐率：1.09req/s] [内存消耗：3,530.20kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001438s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'base',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/admin',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662061; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662334',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000770s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.000878s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->base[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/base.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.123809s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.071469s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.069158s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.065462s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.103974s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.095472s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:43:14+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/remain.html
+[ info ] localhost/thinkcmf/public/data/data/remain.html [运行时间：0.825683s][吞吐率：1.21req/s] [内存消耗：3,521.90kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002004s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'remain',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/admin',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662061; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662334',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000664s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.000879s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->remain[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/remain.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095411s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.064252s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.062832s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.074940s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.062630s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.067012s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:43:15+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/remain.html
+[ info ] localhost/thinkcmf/public/data/data/remain.html [运行时间：0.784801s][吞吐率：1.27req/s] [内存消耗：3,521.90kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001690s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'remain',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/admin',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662061; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662334',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000582s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001475s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->remain[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/remain.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099296s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.060868s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.072895s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.073116s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.063040s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.064307s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:43:42+08:00 ] 0.0.0.0 GET /thinkcmf/public/admin
+[ info ] localhost/thinkcmf/public/admin [运行时间：0.892011s][吞吐率：1.12req/s] [内存消耗：3,435.59kb] [文件加载：77]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001852s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662061; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662334',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000595s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.000928s ]
+[ info ] [ RUN ] app\admin\controller\IndexController->index[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/admin/controller/IndexController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin/index/index.html [ array (
+  0 => 'admin',
+  1 => 'menus',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.211957s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.125595s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.073583s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.125608s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.073244s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.079537s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.077442s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.076097s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:43:43+08:00 ] 0.0.0.0 GET /thinkcmf/public/admin/main/index.html
+[ info ] localhost/thinkcmf/public/admin/main/index.html [运行时间：0.726421s][吞吐率：1.38req/s] [内存消耗：3,171.88kb] [文件加载：75]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002278s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/admin',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662061; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662334',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000544s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.000889s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\MainController->index[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/admin/controller/MainController.php ]
+[ info ] [ VIEW ] themes/admin_simpleboot3/admin/main/index.html [ array (
+  0 => 'admin',
+  1 => 'dashboard_widgets',
+  2 => 'dashboard_widget_plugins',
+  3 => 'has_smtp_setting',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.153973s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.095177s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.068386s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.112895s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.064857s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_dashboard_widgets' LIMIT 1 [ RunTime:0.061757s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'smtp_setting' LIMIT 1 [ RunTime:0.059348s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.069718s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:43:45+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/remain.html
+[ info ] localhost/thinkcmf/public/data/data/remain.html [运行时间：1.080601s][吞吐率：0.93req/s] [内存消耗：3,521.96kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001425s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'remain',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/admin',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662061; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662623',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000603s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.000870s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->remain[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/remain.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.118907s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.070232s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.086644s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.100148s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.073113s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.140849s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:43:56+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/remain.html
+[ info ] localhost/thinkcmf/public/data/data/remain.html [运行时间：0.810484s][吞吐率：1.23req/s] [内存消耗：3,521.99kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001608s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'remain',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/admin',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662061; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662623',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000792s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001002s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->remain[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/remain.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.122811s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.069729s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.076504s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.068961s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.074491s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.066755s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:46:26+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/remain.html?page=5
+[ info ] localhost/thinkcmf/public/data/data/remain.html?page=5 [运行时间：0.873867s][吞吐率：1.14req/s] [内存消耗：3,522.40kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002095s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'remain',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/data/data/remain.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662061; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662623',
+)
+[ info ] [ PARAM ] array (
+  'page' => '5',
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000683s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.000890s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->remain[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/remain.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.105456s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.061166s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.067467s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.062471s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.062537s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.099762s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:46:33+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/remain.html?page=1
+[ info ] localhost/thinkcmf/public/data/data/remain.html?page=1 [运行时间：3.746875s][吞吐率：0.27req/s] [内存消耗：3,522.41kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001331s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'remain',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/data/data/remain.html?page=5',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662061; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662623',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000550s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.000934s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->remain[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/remain.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:3.072012s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.066499s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.065456s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.065285s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.064615s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.066582s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:46:38+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/remain.html?page=2
+[ info ] localhost/thinkcmf/public/data/data/remain.html?page=2 [运行时间：0.809351s][吞吐率：1.24req/s] [内存消耗：3,522.41kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001469s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'remain',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/data/data/remain.html?page=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662061; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662623',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000595s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.000919s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->remain[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/remain.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.146457s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.061472s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.060068s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.071815s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.067079s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.061594s ]
+---------------------------------------------------------------
+[ 2018-05-30T14:46:44+08:00 ] 0.0.0.0 GET /thinkcmf/public/data/data/remain.html?page=3
+[ info ] localhost/thinkcmf/public/data/data/remain.html?page=3 [运行时间：3.587341s][吞吐率：0.28req/s] [内存消耗：3,522.41kb] [文件加载：80]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.001588s ]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'data',
+    1 => 'data',
+    2 => 'remain',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkcmf/public/data/data/remain.html?page=2',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; refersh_time=0; thinkphp_show_page_trace=0|0; pgv_pvi=2167111680; Phpstorm-8ce21e47=9c3c49c4-2858-4403-a419-407b5ad57a5f; Webstorm-82b282eb=cc7d2826-e9e1-4b4e-84a4-f75a24ed5591; PHPSESSID=or339b1k9tttbk757ubp1ug1s3; pgv_si=s3718355968; key=4ebf1fe54b8f2d83f3646b875efd41a7; email=1079010102%40qq.com; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1524208149; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1524563237; admin_username=admin; Hm_lvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662061; Hm_lpvt_39dcd5bd05965dcfa70b1d2457c6dcae=1527662623',
+)
+[ info ] [ PARAM ] array (
+  'page' => '3',
+)
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../simplewind/cmf/lang/zh-cn.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000835s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.000859s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\data\controller\DataController->remain[ /Applications/XAMPP/xamppfiles/htdocs/thinkcmf/app/data/controller/DataController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] themes/admin_simpleboot3/data/data/remain.html [ array (
+  0 => 'admin',
+  1 => 'data',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:2.563831s ] mysql:host=180.76.53.221;port=3306;dbname=xlcount-view;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_option` [ RunTime:0.303643s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'cdn_settings' LIMIT 1 [ RunTime:0.072465s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xlv_user` [ RunTime:0.075658s ]
+[ sql ] [ SQL ] SELECT * FROM `xlv_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.091928s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `xlv_option` WHERE  `option_name` = 'admin_settings' LIMIT 1 [ RunTime:0.090166s ]
